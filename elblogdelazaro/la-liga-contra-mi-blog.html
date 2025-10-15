@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Liga contra mi blog | El Blog de Lázaro</title>
+    <link rel="shortcut icon" href="./images/avatar.webp" type="image/x-icon">
+	<!--
+		FanPage by Armin @ dbproject.rf.gd
+		Inspired by elblogdelazaro.org
+		Created: 2025-09-03
+		Last update: 2025-10-15
+		Version: 1.0.3
+	-->
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="header" id="header">
+		<!-- Content -->
+		<div class="header__content">
+			<!-- Primary -->
+			<div class="header__primary">
+				<a class="header__primary-title" href="./">
+					El Blog de Lázaro
+				</a>
+				<p class="header__primary-text">
+					Mis notas sobre tecnología
+				</p>
+			</div>
+			<!-- Links -->
+			<nav class="navbar">
+				<a href="#./posts" class="icon-link">
+					<span class="icon-link__icon">📄</span>
+					<span class="icon-link__text">Blog</span>
+				</a>
+				<a href="#./notes" class="icon-link">
+					<span class="icon-link__icon">📔</span>
+					<span class="icon-link__text">Notes</span>
+				</a>
+				<a href="#./archives" class="icon-link">
+					<span class="icon-link__icon">🗃️</span>
+					<span class="icon-link__text">All</span>
+				</a>
+				<a href="#./pages/about" class="icon-link">
+					<span class="icon-link__icon">✍️</span>
+					<span class="icon-link__text">About me</span>
+				</a>
+			</nav>
+		</div>
+	</header>
+	<main class="main-content" id="main-content">
+		<!-- Content -->
+		<div class="content">
+			<h1>La Liga contra mi blog</h1>
+            <!-- Metadata -->
+            <aside>
+                <p class="t-small t-bold"><time datetime="2025-09-01">01 de septiembre de 2025</time> - <a href="#./la-liga-contra-mi-blog">Permalink</a></p>
+                <p class="t-small">Categorias: <a href="#./categories/software">Software</a> — Etiquetas: #<a href="#./tags/blog">Blog</a> #<a href="#./tags/indieweb">indieweb</a></p>
+            </aside>
+            <!-- Table of Contents -->
+			<aside class="table-of-contents">
+                <h2>Tabla de contenidos</h2>
+                <!-- List of contents -->
+                <ul class="table-of-contents__list">
+                    <li><a href="#la-liga-contra-mi-blog-desde-cuándo-usar-cloudflare-es-un-delito">La Liga contra mi blog: ¿desde cuándo usar Cloudflare es un delito?</a></li>
+                    <li><a href="#de-verdad-laliga-no-entiende-c%C3%B3mo-funciona-internet">¿De verdad LaLiga no entiende cómo funciona Internet?</a></li>
+                    <li><a href="#criminalizar-la-infraestructura-no-el-delito">Criminalizar la infraestructura, no el delito</a></li>
+                    <li><a href="#un-peligroso-precedente">Un peligroso precedente</a></li>
+                    <li><a href="#defender-la-libertad-en-la-red">Defender la libertad en la red</a></li>
+                    <li><a href="#conclusión">Conclusión</a></li>
+                </ul>
+			</aside>
+			<h2 id="la-liga-contra-mi-blog-desde-cuándo-usar-cloudflare-es-un-delito">La Liga contra mi blog: ¿desde cuándo usar Cloudflare es un delito?</h2>
+            <p>El 25 de agosto recibí un correo oficial por parte de LaLiga acusando a mi página, El Blog de Lázaro, de estar “alojada en una dirección IP desde la que se violan recurrentemente derechos de propiedad intelectual”. Según ellos, como mi blog utiliza Cloudflare Proxy, resulta que estaba compartiendo la misma dirección IP (104.21.16.1) con otras páginas que, supuestamente, facilitaron el acceso ilícito a partidos de su competición.</p>
+            <p>La carta, plagada de advertencias legales y amenazas de acciones judiciales, llega a pedirme que requiera a Cloudflare para impedir que desde esa IP se compartan contenidos de terceros. En otras palabras: que renuncie a un servicio estándar de la red porque a ellos no les gusta cómo funciona.</p>
+            <!-- Figure -->
+            <figure>
+                <img src="./images/posts/liga-01.png" alt="Correo enviado por La Liga" loading="lazy">
+                <figcaption><p>Correo enviado por La Liga</p></figcaption>
+            </figure>
+            
+            <h2 id="de-verdad-laliga-no-entiende-cómo-funciona-internet">¿De verdad LaLiga no entiende cómo funciona Internet?</h2>
+            <p>Cualquier persona mínimamente familiarizada con la infraestructura de la web sabe que Cloudflare Proxy funciona con direcciones IP compartidas: cientos o miles de webs se alojan tras la misma IP pública, y no existe forma alguna de que un administrador de un sitio pequeño decida qué otros proyectos comparten esa red.</p>
+            <p>Es como si te acusaran de complicidad en un delito porque tu número de teléfono pertenece a la misma compañía que el de alguien que cometió un fraude. El razonamiento es ridículo, pero sirve como excusa para presionar y asustar.</p>
+
+            <!-- Quote -->
+            <blockquote>
+                <p>Aun es mas “extraño” que <strong>La Liga</strong> desconozca todo esto, y aun a sabiendas de su funcionamiento, manden este tipo de requerimientos.</p>
+            </blockquote>
+
+            <h2 id="criminalizar-la-infraestructura-no-el-delito">Criminalizar la infraestructura, no el delito</h2>
+            <p><strong>LaLiga</strong> confunde —o finge confundir— algo básico: los responsables de compartir enlaces ilegales son quienes lo hacen, no quienes usan los mismos servidores, proxies o redes de distribución de contenido.</p>
+            <p>Ir contra <strong>Cloudflare</strong>, contra una IP compartida o contra quienes simplemente la usan, es un ataque directo a la arquitectura de Internet. En lugar de perseguir a los infractores, prefieren intimidar a cualquiera que se cruce en su camino, aunque no tenga absolutamente nada que ver.</p>
+
+            <h2 id="un-peligroso-precedente">Un peligroso precedente</h2>
+            <p>En su correo, LaLiga cita incluso una sentencia judicial para justificar bloqueos de direcciones IP completas. Esto es especialmente grave porque implica que, en nombre de proteger derechos de autor, pueden dejar fuera de la red a proyectos legales, blogs personales o pequeñas empresas que nada tienen que ver con la supuesta infracción.</p>
+
+            <!-- Quote -->
+            <blockquote>
+                <p>Hoy es mi blog, mañana puede ser el tuyo. Con este criterio, cualquier web que utilice un servicio de protección en la nube podría ser censurada sin justificación real.</p>
+            </blockquote>
+
+            <!-- Figure -->
+            <figure>
+                <img src="./images/posts/liga-02.png" alt="Correo enviado por La Liga" loading="lazy">
+                <figcaption><p>Correo enviado por La Liga</p></figcaption>
+            </figure>
+
+            <h2 id="defender-la-libertad-en-la-red">Defender la libertad en la red</h2>
+            <p>Lo que hay detrás de esta maniobra es un intento de censura por la puerta de atrás. Si aceptamos que LaLiga o cualquier gran corporación pueda exigir qué tecnologías usamos para alojar nuestros proyectos, perdemos la libertad de construir una red segura y abierta.</p>
+            <p>Cloudflare Proxy, las VPN y cualquier otro servicio de anonimización o protección no son delitos: son herramientas esenciales que permiten que pequeños proyectos podamos existir sin miedo a ataques o abusos. Demonizarlos es criminalizar la seguridad digital y limitar la libertad de expresión.</p>
+
+            <h2 id="conclusión">Conclusión</h2>
+            <p>LaLiga debería centrarse en proteger sus contenidos persiguiendo a quienes realmente los piratean, no en intimidar a pequeños creadores que usan servicios legales y legítimos.</p>
+            <p>Yo defiendo el derecho a utilizar Cloudflare Proxy y cualquier otra tecnología que garantice la privacidad y libertad de Internet. Y también defiendo mi blog: un espacio para compartir conocimiento, no un campo de batalla para los abusos de poder de una organización deportiva.</p>
+            <p>Espero que te haya gustado, pasa un buen día. 🐧</p>
+
+            <!-- End Content -->
+            <aside class="end-content">
+                <hr>
+                <!-- Contact -->
+                <blockquote>
+                    <h3>Contacto</h3>
+                    <p>Si encuentras algún problema o tienes alguna pregunta sobre este artículo, no dudes en comunicarte conmigo a través de <a href="https://indieweb.org/Webmention" target="_blank" rel="noopener noreferrer">webmentions</a>, o mastodon, Consulta la página <a href="#./pages/about" target="_blank">Acerca de</a> para obtener más detalles.</p>
+                </blockquote>
+                <!-- Read Next -->
+                <p class="t-right"><a href="#./por-qu%C3%A9-comparto-p%C3%BAblicamente-las-estad%C3%ADsticas-del-blog/?ref=footer">Por qué comparto públicamente... »</a></p>
+            
+                <h3>🎀 Publicaciones Relacionadas</h3>
+                <!-- Related Posts List -->
+                <ul class="entries-list">
+                    <li><a href="#./por-qu%C3%A9-comparto-p%C3%BAblicamente-las-estad%C3%ADsticas-del-blog">Por qué comparto públicamente las estadísticas del blog</a></li>
+                    <li><a href="#./sin-comentarios-ni-iteraciones-en-el-blog-ugc">Sin comentarios ni iteraciones en el blog (UGC)</a></li>
+                    <li><a href="#./top-10-temas-para-hugo-m%C3%A1s-descargados">Top 10 temas para Hugo más descargados</a></li>
+                    <li><a href="#./la-importancia-de-la-netiqueta-y-el-respeto-en-la-creaci%C3%B3n-de-contenido">La importancia de la netiqueta y el respeto en la creación de contenido</a></li>
+                    <li><a href="#./mi-experiencia-al-construir-un-servidor-dom%C3%A9stico">Mi experiencia al construir un servidor doméstico</a></li>
+                </ul>
+            </aside>
+		</div>
+	</main>
+	<!-- Footer -->
+	<footer class="footer" id="footer">
+		<!-- Content -->
+		<div class="footer__content">
+			<!-- Links -->
+			<nav class="navbar">
+				<a href="#./pages" class="icon-link">
+					<span class="icon-link__icon">📑</span>
+					<span class="icon-link__text">Pages</span>
+				</a>
+				<a href="#./pages/stats" class="icon-link">
+					<span class="icon-link__icon">📊</span>
+					<span class="icon-link__text">Statistics</span>
+				</a>
+				<a href="https://ref2.elblogdelazaro.org/share/Mw2aczVnmolh1uzm/elblogdelazaro.org" target="_blank" class="icon-link">
+					<span class="icon-link__icon">📈</span>
+					<span class="icon-link__text">Metrics</span>
+				</a>
+				<a href="#./pages/more" class="icon-link">
+					<span class="icon-link__icon">🔗</span>
+					<span class="icon-link__text">BlogRoll</span>
+				</a>
+				<a href="#./pages/suscribe" class="icon-link">
+					<span class="icon-link__icon">🔔</span>
+					<span class="icon-link__text">Suscribe</span>
+				</a>
+			</nav>
+			<!-- Links -->
+			<nav class="navbar">
+				<a href="#./posts" class="icon-link">
+					<span class="icon-link__icon">📓</span>
+					<span class="icon-link__text">Articles</span>
+				</a>
+				<span>
+					for:
+					<a href="#./series" class="icon-link">
+						<span class="icon-link__icon">📎</span>
+						<span class="icon-link__text">Series</span>
+					</a>
+				</span>
+				<a href="#./tags" class="icon-link">
+					<span class="icon-link__icon">🏷️</span>
+					<span class="icon-link__text">Tags</span>
+				</a>
+				<a href="#./categories" class="icon-link">
+					<span class="icon-link__icon">🔠</span>
+					<span class="icon-link__text">Categories</span>
+				</a>
+			</nav>
+			<!-- Copyright -->
+			<p class="copy">
+				&copy; 2010 - 2025
+				<a target="_blank" href="https://elblogdelazaro.org/">Carlos M.</a>
+				FanPage by
+				<a target="_blank" href="https://dbproject.rf.gd">Armin</a>
+			</p>
+		</div>
+	</footer>
+</body>
+</html>
