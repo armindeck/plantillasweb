@@ -13,8 +13,8 @@ Plantillasweb es una colección de plantillas HTML y CSS creadas desde cero, ins
 ## 📂 Estructura de Archivos
 
 plantillasweb/     
-│── elblogdelazaro/  
-│── flinux/    
+│── [elblogdelazaro/](https://armindeck.github.io/plantillasweb/elblogdelazaro/)  
+│── [flinux/](https://armindeck.github.io/plantillasweb/flinux/)    
 │── README.md    
 └── LICENSE
 
