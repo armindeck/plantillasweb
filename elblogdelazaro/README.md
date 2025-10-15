@@ -2,6 +2,12 @@
 
 El Blog de Lázaro es una pagina inpirada en la pagina [El Blog de Lázaro](https://elblogdelazaro.org/) creada por Carlos M.
 
+## 🚀 Vista previa en línea
+
+👉 [Ver demo en GitHub Pages](https://armindeck.github.io/plantillasweb/elblogdelazaro/)
+
+---
+
 ## 📂 Estructura de Archivos
 
 elblogdelazaro/     
@@ -15,3 +21,4 @@ elblogdelazaro/
 ## 📂 Vista previa
 
 ![El Blog de Lázaro es una pagina inpirada en la pagina El Blog de Lázaro creada por Carlos M.](preview.png)
+
